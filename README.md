@@ -2,7 +2,7 @@
 
 This is a simple project built with Node.js and Express, focusing on a social media platform for posting tweets and interacting with them through likes and comments.
 
-# Brief features of the project
+## Brief features of the project
 
 - User should be able to create a post
     - [The post/tweet cannot be more than 250 chars]

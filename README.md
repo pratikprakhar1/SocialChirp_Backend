@@ -34,7 +34,6 @@ This is a simple project built with Node.js and Express, focusing on a social me
 - [API Routes](#api-routes)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 

@@ -1,4 +1,4 @@
-###### Twitter Backend
+# Twitter Backend
 
 This is a simple project built with Node.js and Express, focusing on a social media platform for posting tweets and interacting with them through likes and comments.
 

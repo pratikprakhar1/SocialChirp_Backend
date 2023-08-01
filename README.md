@@ -1,23 +1,72 @@
-# Requirements
+Twitter Backend
+This is a simple project built with Node.js and Express, focusing on a social media platform for posting tweets and interacting with them through likes and comments.
 
-- User should be able to create a post
-    - [The post/tweet cannot be more than 250 chars]
-    - [Every post/tweet will be having support for image upload]
+Brief features of the project
+User should be able to create a post
 
-- Any post should be visible to all those users who follows the author
-- Anyone who follows you can comment on a post/tweet
-- Anyone who follows you can like on a post/tweet
-- We can comment on a comment
-- We can like any comment also
-- Retweeting
+[The post/tweet cannot be more than 250 chars]
+[Every post/tweet will be having support for image upload]
+Any post should be visible to all those users who follows the author
 
-- User profile:
-    - Name
-    - Follower count
-    - Bio 
-    - Last 10 tweets from the user
+Anyone who follows you can comment on a post/tweet
 
-- Pagination on tweets 
-- User auth 
+Anyone who follows you can like on a post/tweet
 
-- Every tweet might be having a hashtag 
+We can comment on a comment
+
+We can like any comment also
+
+Retweeting
+
+User profile:
+
+Name
+Follower count
+Bio
+Last 10 tweets from the user
+Pagination on tweets
+
+User auth
+
+Every tweet might be having a hashtag
+
+Table of Contents
+Introduction
+Installation
+Usage
+API Routes
+Technologies Used
+Contributing
+Introduction
+The project is a basic social media platform that allows users to create and post tweets, like tweets, and leave comments on them. It provides RESTful API endpoints for performing these actions and communicates with a MongoDB database to store and retrieve data.
+
+Installation
+To run the project locally, follow these steps:
+
+Make sure you have Node.js installed on your system.
+Clone this repository to your local machine.
+Navigate to the project directory using the terminal/command prompt.
+Install the dependencies by running:
+npm install
+Ensure you have MongoDB installed and running on your system. Adjust the MongoDB connection settings in the config/database.js file if necessary.
+Usage
+Start the server by running the following command:
+npm start
+The server will start on port 3000. You can access it by visiting http://localhost:3000 in your web browser or using tools like Postman to interact with the API.
+
+The API provides endpoints for creating tweets, liking tweets, and leaving comments. You can use the provided API routes to perform these actions.
+
+API Routes
+Here are the main API routes available in the application:
+
+POST /api/tweets: Create a new tweet.
+POST /api/tweets/:tweetId/like: Like a tweet.
+POST /api/tweets/:tweetId/comments: Leave a comment on a tweet.
+Technologies Used
+Node.js
+Express.js
+MongoDB (with Mongoose)
+Passport.js (for authentication)
+JWT (JSON Web Tokens) for token-based authentication
+Contributing
+Contributions to this project are welcome. If you find any issues or want to add new features, feel free to submit a pull request.

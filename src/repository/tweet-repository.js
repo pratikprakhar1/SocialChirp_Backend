@@ -30,6 +30,15 @@ class TweetRepository extends CrudRepository{
                 console.log(error);
         }     
     }
+
+     find (id){
+        try{
+            const tweet = Tweet.findById(id);
+            return tweet;
+        } catch (error){
+            console.log(error);
+        }
+    }
 }
 
 export default TweetRepository;

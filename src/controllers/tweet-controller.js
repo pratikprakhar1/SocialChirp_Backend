@@ -2,7 +2,7 @@ import TweetService from "../services/tweet_service.js";
 
 const tweetService = new TweetService();
 
- const createTweet = async(req,res)=>{
+export const createTweet = async(req,res)=>{
     try{
         const response= await tweetService.create(req.body);
         return res.status(201).json({
@@ -21,4 +21,3 @@ const tweetService = new TweetService();
            });
     }
 }
-export default createTweet;

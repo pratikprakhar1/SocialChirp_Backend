@@ -20,7 +20,7 @@ export const signUp = async (req,res) => {
             message: 'Something went wrong',
             data: {},
             success: false,
-            err: err
+            err: err.message
         });
     }
 }
@@ -28,10 +28,7 @@ export const signUp = async (req,res) => {
 export const login = async (req, res) => {
     
     try { 
-        console.log(req.body);
         const token = await userService.signin(req.body);
-        console.log(token);
-       
         return res.status(200).json({
             success: true,
             message: 'Successfully logged in',
@@ -43,7 +40,7 @@ export const login = async (req, res) => {
             message: 'Something went wrong',
             data: {},
             success: false,
-            err: error
+            err: error.message
         });
     }
 }

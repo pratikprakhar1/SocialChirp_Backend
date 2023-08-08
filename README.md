@@ -74,6 +74,7 @@ Here are the main API routes available in the application:
 - MongoDB (with Mongoose)
 - Passport.js (for authentication)
 - JWT (JSON Web Tokens) for token-based authentication
+- AWS S3 for storing images
 
 ## Contributing
 
